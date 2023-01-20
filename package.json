@@ -1,0 +1,24 @@
+{
+  "name": "twitter-clone-backend",
+  "version": "1.0.0",
+  "description": "A simple twitter backend application created using nodejs and fakerjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx json-server index.js --port=1919"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamalielara/twitter-clone-backend.git"
+  },
+  "author": "Ara Gamaliel Boanerges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamalielara/twitter-clone-backend/issues"
+  },
+  "homepage": "https://github.com/gamalielara/twitter-clone-backend#readme",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "json-server": "^0.17.1"
+  }
+}
