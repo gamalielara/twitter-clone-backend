@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx json-server index.js --port=1919"
+    "start": "npx json-server index.js --port=1919 --host=10.20.145.78"
   },
   "repository": {
     "type": "git",

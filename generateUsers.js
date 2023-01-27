@@ -28,6 +28,6 @@ const generateUsers = (number) => {
   return users;
 };
 
-const ALL_USERS = generateUsers(faker.datatype.number({ min: 99, max: 999 }));
+const ALL_USERS = generateUsers(faker.datatype.number({ min: 99, max: 9999 }));
 
 module.exports = { generateUsers, ALL_USERS, USER_ID };
