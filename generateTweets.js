@@ -19,6 +19,6 @@ const generateTweets = () => {
   return tweets;
 };
 
-const ALL_TWEETS = generateTweets();
+const ALL_TWEETS = generateTweets({ min: 99, max: 999 });
 
 module.exports = { ALL_TWEETS };
