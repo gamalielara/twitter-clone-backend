@@ -6,7 +6,7 @@ const generateDatabase = () => {
 
   return {
     users: [...thisUser, ...ALL_USERS],
-    thisUser,
+    this_user: thisUser,
     tweets: [...ALL_TWEETS],
   };
 };
