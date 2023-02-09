@@ -2,10 +2,10 @@
   "name": "twitter-clone-backend",
   "version": "1.0.0",
   "description": "A simple twitter backend application created using nodejs and fakerjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx json-server index.js --port=1919"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
