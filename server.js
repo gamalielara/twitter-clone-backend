@@ -1,15 +1,14 @@
-const jsonServer = require("json-server");
-const server = jsonServer.create();
-const router = jsonServer.router("./db.json");
-const middlewares = jsonServer.defaults();
-const writeDatabase = require("./index");
+const { ALL_USERS, generateUsers } = require("./generateUsers");
+const { ALL_TWEETS } = require("./generateTweets");
 
-writeDatabase();
+const generateDatabase = () => {
+  const thisUser = generateUsers(1);
 
-server.use(middlewares);
-server.use(router);
-server.listen(1919, () => {
-  console.log("JSON Server is running");
-});
+  return {
+    users: [...thisUser, ...ALL_USERS],
+    this_user: thisUser,
+    tweets: [...ALL_TWEETS],
+  };
+};
 
-module.exports = server;
+module.exports = generateDatabase;
